@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "georgia", sans-serif;
+}
+body {
+	background-color: #e8f2fc;
+}
+.container {
+	width: 100%;
+	max-width: 650px;
+	padding: 15px;
+	margin: 50px auto;
+	background-color: #fff;
+}
+.container h1 {
+	text-align: center;
+	text-transform: capitalize;
+}
+.underline {
+	width: 140px;
+	border-bottom: 4px solid lightblue;
+	margin: auto;
+}
+.btn-container {
+	margin: 10px 0 10px 0;
+	padding: 0;
+	display: flex;
+}
+.tab-btn {
+	width: 300px;
+	padding: 15px 25px;
+	text-transform: capitalize;
+	border: 0;
+	cursor: pointer;
+	background-color: lightblue;
+	font-size: 18px;
+	margin: 15px 0 15px 0;
+}
+.tab-btn.active {
+	background-color: #fff;
+	font-style: italic;
+	
+}
+.revenue {
+	font-size: 14px;
+	color: #cdcdcd;
+	margin: 10px 0 10px 0;
+}
+.about-content p {
+	margin-left: 15px;
+	
+}
+h4 {
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+.content {
+	display: none;
+}
+.content.active {
+	display: block;
+	font-size: 22px;
+}
+@media(max-width: 660px) {
+	.container {
+		max-width: 520px;
+		
+	}
+	.tab-btn {
+		width: 240px;
+		font-size: 14px;
+	}
+	.content p {
+		font-size: 18px;
+	}
+	.content h4 {
+		font-size: 20px;
+	}
+	.revenue {
+		font-size: 12px;
+	}
+}
+@media(max-width: 480px) {
+	h1 {
+		font-size: 26px
+	}
+	.container {
+		max-width: 410px;
+		
+	}
+	.tab-btn {
+		width: 180px;
+		font-size: 14px;
+	}
+		.content p {
+		font-size: 16px;
+	}
+	.content h4 {
+		font-size: 18px;
+	}
+	.revenue {
+		font-size: 10px;
+	}
+}
